@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home - Web Dev Platform</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/home.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">WebDevPlatform</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="how-it-works.html" class="nav-link">How It Works</a></li>
+                <li class="nav-item"><a href="login.html" class="nav-link">Login</a></li>
+                <li class="nav-item"><a href="signup.html" class="nav-link nav-link-button">Sign Up</a></li>
+            </ul>
+            <div class="hamburger" onclick="toggleMobileMenu()">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Image Carousel Section -->
+        <section class="carousel-section">
+            <div class="carousel-container">
+                <div class="carousel-slide">
+                    <!-- Carousel Images -->
+                    <img src="images/carousel1.jpg" alt="Web Design 1">
+                    <img src="images/carousel2.jpg" alt="Web Design 2">
+                    <img src="images/carousel3.jpg" alt="Web Design 3">
+                    <!-- Add more images as needed -->
+                </div>
+                <!-- Navigation Buttons -->
+                <a class="prev" onclick="moveSlide(-1)">&#10094;</a>
+                <a class="next" onclick="moveSlide(1)">&#10095;</a>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features-section">
+            <div class="feature">
+                <i class="fa fa-dollar-sign fa-2x"></i>
+                <h3>Affordable Rates</h3>
+                <p>Get quality work at student-friendly prices.</p>
+            </div>
+            <div class="feature">
+                <i class="fa fa-graduation-cap fa-2x"></i>
+                <h3>Fresh Talent</h3>
+                <p>Work with innovative students eager to build their portfolios.</p>
+            </div>
+            <div class="feature">
+                <i class="fa fa-shield-alt fa-2x"></i>
+                <h3>Secure Transactions</h3>
+                <p>Safe and reliable payment methods for peace of mind.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2023 WebDevPlatform. All rights reserved.</p>
+            <div class="social-media">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Link to JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

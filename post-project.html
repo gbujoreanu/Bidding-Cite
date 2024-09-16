@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Post a Project - Web Dev Platform</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/post-project.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <!-- ... -->
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Post a Project Form -->
+        <section class="post-project-form">
+            <h2>Post a New Project</h2>
+            <form action="project-detail.html" method="post">
+                <label for="project-title">Project Title</label>
+                <input type="text" id="project-title" name="project-title" required>
+
+                <label for="project-description">Project Description</label>
+                <textarea id="project-description" name="project-description" rows="6" required></textarea>
+
+                <label for="budget">Budget ($ USD)</label>
+                <input type="number" id="budget" name="budget" min="0" required>
+
+                <label for="deadline">Deadline</label>
+                <input type="date" id="deadline" name="deadline" required>
+
+                <label for="skills-required">Skills Required</label>
+                <input type="text" id="skills-required" name="skills-required" placeholder="e.g., React, TypeScript" required>
+
+                <button type="submit" class="btn btn-primary">Post Project</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <!-- ... -->
+    </footer>
+
+    <!-- Link to JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

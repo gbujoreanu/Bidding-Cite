@@ -1,0 +1,57 @@
+/* auth.css */
+
+/* Auth Form */
+.auth-form {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 40px 20px;
+    background-color: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.auth-form h2 {
+    margin-bottom: 20px;
+}
+
+.auth-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-form label {
+    text-align: left;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.auth-form input,
+.auth-form select {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #CBD5E0;
+    border-radius: 5px;
+}
+
+.auth-form input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px;
+}
+
+.auth-form button {
+    margin-top: 10px;
+}
+
+.auth-form p {
+    margin-top: 20px;
+}
+
+.auth-form a {
+    color: #2B6CB0;
+}
+
+.form-links {
+    text-align: right;
+    margin-bottom: 15px;
+}
