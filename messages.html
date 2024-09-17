@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>User Profile - Web Dev Platform</title>
+    <title>Messages - Web Dev Platform</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Link to CSS -->
     <link rel="stylesheet" href="css/main.css">
-    <!-- No additional CSS needed; styles are in main.css -->
-    <!-- Font Awesome for icons (optional) -->
+    <link rel="stylesheet" href="css/messages.css">
+    <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
@@ -36,44 +36,46 @@
 
     <!-- Main Content -->
     <main>
-        <!-- User Profile -->
-        <section class="user-profile">
-            <div class="profile-header">
-                <img src="images/profile-picture.jpg" alt="Profile Picture" class="profile-picture">
-                <h2>John Doe</h2>
-                <p>Full-Stack Developer</p>
-                <button class="btn btn-primary">Message</button>
+        <div class="messages-container">
+            <!-- Conversations List -->
+            <div class="conversations">
+                <h2>Conversations</h2>
+                <ul>
+                    <li class="conversation active">
+                        <img src="images/profile1.jpg" alt="User 1">
+                        <div class="conversation-info">
+                            <h3>John Doe</h3>
+                            <p>Last message snippet...</p>
+                        </div>
+                    </li>
+                    <!-- Repeat for other conversations -->
+                </ul>
             </div>
-            <div class="profile-content">
-                <h3>About Me</h3>
-                <p>Computer Science student at XYZ University specializing in web development...</p>
-                <h3>Skills</h3>
-                <div class="skills">
-                    <span class="tag">React</span>
-                    <span class="tag">TypeScript</span>
-                    <span class="tag">Node.js</span>
-                    <span class="tag">Tailwind CSS</span>
+
+            <!-- Chat Window -->
+            <div class="chat-window">
+                <div class="chat-header">
+                    <img src="images/profile1.jpg" alt="User 1">
+                    <h3>John Doe</h3>
                 </div>
-                <h3>Portfolio</h3>
-                <!-- Portfolio Items -->
-                <div class="portfolio">
-                    <div class="portfolio-item">
-                        <img src="images/project1.jpg" alt="Project 1">
-                        <p>Project A</p>
+                <div class="chat-messages">
+                    <!-- Messages -->
+                    <div class="message received">
+                        <p>Hi there! I'm interested in your project.</p>
+                        <span class="timestamp">10:15 AM</span>
                     </div>
-                    <!-- Repeat as needed -->
+                    <div class="message sent">
+                        <p>Great! Let's discuss the details.</p>
+                        <span class="timestamp">10:17 AM</span>
+                    </div>
+                    <!-- Repeat messages -->
                 </div>
-                <h3>Reviews</h3>
-                <!-- Review Items -->
-                <div class="reviews">
-                    <div class="review">
-                        <p>"Great work on our website!" - Client A</p>
-                        <p>Rating: ★★★★☆</p>
-                    </div>
-                    <!-- Repeat as needed -->
+                <div class="chat-input">
+                    <input type="text" placeholder="Type a message...">
+                    <button><i class="fa fa-paper-plane"></i></button>
                 </div>
             </div>
-        </section>
+        </div>
     </main>
 
     <!-- Footer -->
@@ -91,5 +93,6 @@
 
     <!-- Link to JavaScript -->
     <script src="script.js"></script>
+    <script src="js/messages.js"></script>
 </body>
 </html>
