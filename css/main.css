@@ -224,26 +224,25 @@ footer {
 
 /* Media Queries for Responsive Design */
 @media (max-width: 950px) {
-    /* Hide the menu and show the hamburger icon by default */
     .nav-menu {
-        display: none; /* Hidden by default */
-        width: 100%; /* Full width on mobile */
-        flex-direction: column; /* Stack items vertically */
-        background-color: #ffffff; /* Add a background color */
-        position: absolute; /* Position it relative to the viewport */
-        top: 60px; /* Position it just below the navbar */
+        display: none; 
+        width: 100%; 
+        flex-direction: column; 
+        background-color: #ffffff; 
+        position: absolute; 
+        top: 60px; 
         left: 0;
         right: 0;
-        padding: 15px; /* Add some padding for better spacing */
-        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for a layered effect */
-        max-height: 0; /* Initially hidden */
-        overflow: hidden; /* Prevents content overflow */
-        transition: max-height 0.4s ease-in-out; /* Smooth dropdown effect */
-        z-index: 999; /* Ensure it’s on top of other elements */
+        padding: 15px; 
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+        max-height: 0; 
+        overflow: hidden; 
+        transition: max-height 0.4s ease-in-out; 
+        z-index: 999; 
     }
 
     .hamburger {
-        display: flex; /* Display the hamburger icon */
+        display: flex; 
     }
 
     .nav-container {
@@ -252,25 +251,25 @@ footer {
     }
 
     .nav-logo {
-        margin-right: auto; /* Automatically push logo to the left */
+        margin-right: auto; 
     }
 
     .nav-toggle {
-        display: none; /* Hide the checkbox by default */
+        display: none; 
     }
 
     .nav-toggle-label {
-        display: block; /* Show the label (hamburger icon) */
-        cursor: pointer; /* Pointer cursor for better UX */
+        display: block; 
+        cursor: pointer; 
         position: relative;
-        z-index: 1; /* Ensure it's clickable above other elements */
+        z-index: 1; 
     }
 
     .nav-toggle-label span,
     .nav-toggle-label span::before,
     .nav-toggle-label span::after {
         display: block;
-        background-color: #2d3748; /* Dark color for visibility */
+        background-color: #2d3748; 
         height: 2px;
         width: 25px;
         position: relative;
@@ -293,17 +292,15 @@ footer {
     }
 
     .nav-item {
-        margin: 15px 0; /* Add space between items */
-        text-align: center; /* Center the text */
+        margin: 15px 0; 
+        text-align: center; 
     }
 
-    /* Show the menu when the hamburger is clicked (checked) */
     #nav-toggle:checked + .nav-toggle-label + .nav-menu {
-        display: flex; /* Display the menu */
-        max-height: 500px; /* Set a maximum height for dropdown */
+        display: flex; 
+        max-height: 500px; 
     }
 
-    /* Transform the hamburger icon into an X when active */
     #nav-toggle:checked + .nav-toggle-label span {
         background-color: transparent;
     }
